@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TaskUtilLib\TaskUtilLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="TaskUtilLib">
+      <HintPath>..\TaskUtilLib\bin\Release\net6.0\TaskUtilLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Error">
+      <HintPath>..\ExceptionUtilLibV2\bin\Release\net5.0\Util.Error.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.ExceptionLibrary">
+      <HintPath>..\ExceptionLibrary\bin\Release\net5.0\Util.ExceptionLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
